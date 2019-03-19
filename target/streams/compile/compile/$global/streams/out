@@ -1,0 +1,25 @@
+[error] C:\Users\yohan\Desktop\Projects\Chess\src\main\scala\Pieces\Bishop.scala:6:16: overriding variable name in class Piece of type String;
+[error]  value name cannot override a mutable variable
+[error]   override val name = "Bishop"
+[error]                ^
+[error] C:\Users\yohan\Desktop\Projects\Chess\src\main\scala\Pieces\King.scala:6:16: overriding variable name in class Piece of type String;
+[error]  value name cannot override a mutable variable
+[error]   override val name = "King"
+[error]                ^
+[error] C:\Users\yohan\Desktop\Projects\Chess\src\main\scala\Pieces\Knight.scala:6:16: overriding variable name in class Piece of type String;
+[error]  value name cannot override a mutable variable
+[error]   override val name = "Knight"
+[error]                ^
+[error] C:\Users\yohan\Desktop\Projects\Chess\src\main\scala\Pieces\Pawn.scala:6:16: overriding variable name in class Piece of type String;
+[error]  value name cannot override a mutable variable
+[error]   override val name: String = "pawn"
+[error]                ^
+[error] C:\Users\yohan\Desktop\Projects\Chess\src\main\scala\Pieces\Queen.scala:6:16: overriding variable name in class Piece of type String;
+[error]  value name cannot override a mutable variable
+[error]   override val name = "Queen"
+[error]                ^
+[error] C:\Users\yohan\Desktop\Projects\Chess\src\main\scala\Pieces\Rook.scala:6:16: overriding variable name in class Piece of type String;
+[error]  value name cannot override a mutable variable
+[error]   override val name = "Rook"
+[error]                ^
+[error] 6 errors found

@@ -1,0 +1,16 @@
+[info] Fast optimizing C:\Users\yohan\Desktop\Projects\Chess\target\scala-2.12\chess-fastopt.js
+[debug] Linker: Compute reachability: 20969 us
+[debug] Linker: Assemble LinkedClasses: 8240 us
+[debug] Basic Linking: 30312 us
+[debug] Inc. optimizer: Batch mode: false
+[debug] Inc. optimizer: Incremental part: 4106 us
+[debug] Inc. optimizer: Optimizing 12 methods.
+[debug] Inc. optimizer: Optimizer part: 1201 us
+[debug] Inc. optimizer: 6799 us
+[debug] Refiner: Compute reachability: 24341 us
+[debug] Refiner: Assemble LinkedClasses: 1514 us
+[debug] Refiner: 25957 us
+[debug] Emitter: Class tree cache stats: reused: 167 -- invalidated: 11
+[debug] Emitter: Method tree cache stats: resued: 236 -- invalidated: 12
+[debug] Emitter (write output): 9462 us
+[debug] Global IR cache stats: reused: 3 -- invalidated: 11 -- trees read: 11

@@ -1,0 +1,29 @@
+[debug] 
+[debug] Initial source changes: 
+[debug] 	removed:Set()
+[debug] 	added: Set()
+[debug] 	modified: Set(C:\Users\yohan\Desktop\Projects\Chess\src\main\scala\Pieces\Rook.scala, C:\Users\yohan\Desktop\Projects\Chess\src\main\scala\Pieces\King.scala, C:\Users\yohan\Desktop\Projects\Chess\src\main\scala\Pieces\Queen.scala, C:\Users\yohan\Desktop\Projects\Chess\src\main\scala\Pieces\Piece.scala, C:\Users\yohan\Desktop\Projects\Chess\src\main\scala\Pieces\Knight.scala, C:\Users\yohan\Desktop\Projects\Chess\src\main\scala\Pieces\Bishop.scala)
+[debug] Invalidated products: Set()
+[debug] External API changes: API Changes: Set()
+[debug] Modified binary dependencies: Set()
+[debug] Initial directly invalidated classes: Set(Pieces.Knight, Pieces.Piece, Pieces.Queen, Pieces.Bishop, Pieces.King, Pieces.Rook)
+[debug] 
+[debug] Sources indirectly invalidated by:
+[debug] 	product: Set()
+[debug] 	binary dep: Set()
+[debug] 	external source: Set()
+[debug] All initially invalidated classes: Set(Pieces.Knight, Pieces.Piece, Pieces.Queen, Pieces.Bishop, Pieces.King, Pieces.Rook)
+[debug] All initially invalidated sources:Set(C:\Users\yohan\Desktop\Projects\Chess\src\main\scala\Pieces\Rook.scala, C:\Users\yohan\Desktop\Projects\Chess\src\main\scala\Pieces\King.scala, C:\Users\yohan\Desktop\Projects\Chess\src\main\scala\Pieces\Queen.scala, C:\Users\yohan\Desktop\Projects\Chess\src\main\scala\Pieces\Piece.scala, C:\Users\yohan\Desktop\Projects\Chess\src\main\scala\Pieces\Knight.scala, C:\Users\yohan\Desktop\Projects\Chess\src\main\scala\Pieces\Bishop.scala)
+[debug] Recompiling all 11 sources: invalidated sources (6) exceeded 50.0% of all sources
+[info] Compiling 11 Scala sources to C:\Users\yohan\Desktop\Projects\Chess\target\scala-2.12\classes ...
+[debug] Getting org.scala-sbt:compiler-bridge_2.12:1.2.5:compile for Scala 2.12.8
+[debug] Getting org.scala-sbt:compiler-bridge_2.12:1.2.5:compile for Scala 2.12.8
+[debug] [zinc] Running cached compiler 40eac135 for Scala compiler version 2.12.8
+[debug] [zinc] The Scala compiler is invoked with:
+[debug] 	-Xplugin:C:\Users\yohan\.ivy2\cache\org.scala-js\scalajs-compiler_2.12.8\jars\scalajs-compiler_2.12.8-0.6.26.jar
+[debug] 	-bootclasspath
+[debug] 	C:\Program Files\Java\jre1.8.0_202\lib\resources.jar;C:\Program Files\Java\jre1.8.0_202\lib\rt.jar;C:\Program Files\Java\jre1.8.0_202\lib\sunrsasign.jar;C:\Program Files\Java\jre1.8.0_202\lib\jsse.jar;C:\Program Files\Java\jre1.8.0_202\lib\jce.jar;C:\Program Files\Java\jre1.8.0_202\lib\charsets.jar;C:\Program Files\Java\jre1.8.0_202\lib\jfr.jar;C:\Program Files\Java\jre1.8.0_202\classes;C:\Users\yohan\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.12.8.jar
+[debug] 	-classpath
+[debug] 	C:\Users\yohan\Desktop\Projects\Chess\target\scala-2.12\classes;C:\Users\yohan\.ivy2\cache\org.scala-js\scalajs-library_2.12\jars\scalajs-library_2.12-0.6.26.jar;C:\Users\yohan\.ivy2\cache\org.scala-js\scalajs-dom_sjs0.6_2.12\jars\scalajs-dom_sjs0.6_2.12-0.9.6.jar
+[debug] Scala compilation took 1.150876802 s
+[info] Done compiling.

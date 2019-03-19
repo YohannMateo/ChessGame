@@ -1,0 +1,19 @@
+[info] Full optimizing C:\Users\yohan\Desktop\Projects\Chess\target\scala-2.12\chess-opt.js
+[debug] Linker: Compute reachability: 52706 us
+[debug] Linker: Assemble LinkedClasses: 17235 us
+[debug] Basic Linking: 72217 us
+[debug] Inc. optimizer: Batch mode: true
+[debug] Inc. optimizer: Incremental part: 41785 us
+[debug] Inc. optimizer: Optimizing 837 methods.
+[debug] Inc. optimizer: Optimizer part: 134204 us
+[debug] Inc. optimizer: 179806 us
+[debug] Refiner: Compute reachability: 55228 us
+[debug] Refiner: Assemble LinkedClasses: 2236 us
+[debug] Refiner: 57624 us
+[debug] Emitter: Class tree cache stats: reused: 38 -- invalidated: 46
+[debug] Emitter: Method tree cache stats: resued: 0 -- invalidated: 107
+[debug] Emitter (create Closure trees): 81298 us
+[info] Closure: 0 error(s), 0 warning(s)
+[debug] Closure: Compiler pass: 1392602 us
+[debug] Closure: Write result: 80737 us
+[debug] Global IR cache stats: reused: 13 -- invalidated: 0 -- trees read: 0
