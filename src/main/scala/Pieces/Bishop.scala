@@ -1,7 +1,21 @@
 package Pieces
 
-import Board.{Player, Square}
+import Board.Color.Color
+import Board.{Chessboard, Square}
 
-class Bishop (val p: Player, val s: Square, val c: String) extends Piece(p,s,c) {
-  override val name = "Bishop"
+class Bishop (color: Color) extends Piece {
+  val name = "Bishop"
+  override def printPiece(): String = name + " " + color
+
+  override def movement(c: Chessboard):List[Square] = {
+    val s = c.squares.find(s => s.piece match {
+      case Some(p) => p==this
+      case None => false
+    })
+    println(s match {
+      case Some(sq) => "" + this + Square.printSquare(sq)
+      case None => "Pas de piece"
+    })
+    List[Square]()
+  }
 }

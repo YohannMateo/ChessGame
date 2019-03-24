@@ -2,99 +2,21 @@ package Board
 
 import Pieces._
 
-import scala.collection.mutable.ListBuffer
+case class Chessboard(squares : List[Square])
 
-class Chessboard {
-  var squares = new ListBuffer[Square]()
+object Chessboard {
+  def initialisation():Chessboard = {
+    val listPawn = List.range(1,9).flatMap(i => List(Square(2,i,Option(new Pawn(Color.White))), Square(7,i,Option(new Pawn(Color.Black)))))
+    val listRook = List(Square(1,1,Option(new Rook(Color.White))), Square(1,8,Option(new Rook(Color.White))),Square(8,1,Option(new Rook(Color.Black))), Square(8,8,Option(new Rook(Color.Black))))
+    val listKnight = List(Square(1,2,Option(new Knight(Color.White))), Square(1,7,Option(new Knight(Color.White))),Square(8,2,Option(new Knight(Color.Black))), Square(8,7,Option(new Knight(Color.Black))))
+    val listBishop = List(Square(1,3,Option(new Bishop(Color.White))), Square(1,6,Option(new Bishop(Color.White))),Square(8,3,Option(new Bishop(Color.Black))), Square(8,6,Option(new Bishop(Color.Black))))
+    val listQueen = List(Square(1,4,Option(new Queen(Color.White))), Square(8,4,Option(new Queen(Color.Black))))
+    val listKing = List(Square(1,5,Option(new King(Color.White))), Square(8,4,Option(new King(Color.Black))))
+    val listEmpty = List.range(1,9).flatMap(i => List(Square(6,i,None), Square(5,i,None), Square(4,i,None)))
 
-  for (i <- 1 until 9)
-    for (j <- 1 until 9)
-      squares += new Square(i,j)
-
-
-  private val allSquare = squares.toList;
-
-  var pieces = new ListBuffer[Piece]()
-  val black = new Player("black")
-  val white = new Player("white")
-  for (i <- 1 until 9) {
-    var squareBlack = squares.find(s => (s.column == i && s.row == 7))
-    var squareWhite = squares.find(s => (s.column == i && s.row == 2))
-    (squareWhite,squareBlack) match {
-      case (Some(w),Some(b)) =>
-        var pawn = new Pawn(white,w,"white")
-        w.setPiece(pawn)
-        pieces += pawn;
-        pawn = new Pawn(black,b,"black")
-        b.setPiece(pawn)
-        pieces += pawn;
-      case _ => "Squares not found"
-    }
-
-    squareBlack = squares.find(s => (s.column == i && s.row == 8))
-    squareWhite = squares.find(s => (s.column == i && s.row == 1))
-    i match {
-      case 1 | 8 =>
-        (squareWhite,squareBlack) match {
-          case (Some(w), Some(b)) =>
-            var pawn = new Rook(white, w, "white")
-            w.setPiece(pawn)
-            pieces += pawn;
-            pawn = new Rook(black, b, "black")
-            b.setPiece(pawn)
-            pieces += pawn;
-          case _ => "Squares not found"
-        }
-      case 2 | 7 =>
-        (squareWhite,squareBlack) match {
-          case (Some(w), Some(b)) =>
-            var pawn = new Knight(white, w, "white")
-            w.setPiece(pawn)
-            pieces += pawn;
-            pawn = new Knight(black, b, "black")
-            b.setPiece(pawn)
-            pieces += pawn;
-          case _ => "Squares not found"
-        }
-      case 3 | 6 =>
-        (squareWhite,squareBlack) match {
-          case (Some(w), Some(b)) =>
-            var pawn = new Bishop(white, w, "white")
-            w.setPiece(pawn)
-            pieces += pawn;
-            pawn = new Bishop(black, b, "black")
-            b.setPiece(pawn)
-            pieces += pawn;
-          case _ => "Squares not found"
-        }
-      case 4 =>
-        (squareWhite,squareBlack) match {
-          case (Some(w), Some(b)) =>
-            var pawn = new Queen(white, w, "white")
-            w.setPiece(pawn)
-            pieces += pawn;
-            pawn = new Queen(black, b, "black")
-            b.setPiece(pawn)
-            pieces += pawn;
-          case _ => "Squares not found"
-        }
-      case 5 =>
-        (squareWhite,squareBlack) match {
-          case (Some(w), Some(b)) =>
-            var pawn = new King(white, w, "white")
-            w.setPiece(pawn)
-            pieces += pawn;
-            pawn = new King(black, b, "black")
-            b.setPiece(pawn)
-            pieces += pawn;
-          case _ => "Squares not found"
-        }
-      case _ => "Index Invalid"
-
-    }
+    val listPieces = List.concat(listPawn,listBishop,listEmpty,listKing,listKnight,listQueen,listRook).sortBy(s=>(s.row,s.column))
+    Chessboard(listPieces)
   }
 
-  def print() {
-    allSquare.foreach {x => x.print()}
-  }
+  def printChessboard (c : Chessboard): Unit = c.squares.foreach(s => println(Square.printSquare(s)))
 }

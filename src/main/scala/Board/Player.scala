@@ -1,10 +1,11 @@
 package Board
 
+import Board.Color.Color
 
+case class Player (color: Color)
 
-class Player (val player: String) {
-  def print() {
-    println(player)
+object Player {
+  def printPlayer(p : Player) {
+    println(p.color)
   }
-
 }

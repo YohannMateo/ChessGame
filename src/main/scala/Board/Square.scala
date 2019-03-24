@@ -2,32 +2,13 @@ package Board
 
 import Pieces.Piece
 
-class Square (val row: Int, val column: Int) {
-  var col = ""
+case class Square (row: Int, column: Int, piece: Option[Piece])
 
-  if (row%2 == 0 && column%2==1 || row%2 == 1 && column%2==0)
-    col = "white"
-  else
-    col = "black"
+object Square {
+  def addPiece(s: Square, p : Piece): Square = s.copy(piece=Some(p))
 
-  val color = col
-
-
-  var piece: Option[Piece] = None;
-
-  def print() {
-    var p = piece match {
-      case Some(n) => n.print()
-      case None => "  Piece : empty"
-    }
-    println("row : " + row + " --  column : " + column + " -- " + p)
-  }
-
-  def setPiece(p: Piece) {
-    piece = Option(p)
-  }
-
-  def getPiece() = {
-    piece
+  def printSquare(s: Square):String = s.piece match {
+    case Some(p) => "Square : (row : " + s.row + ", column : "+ s.column +") include " + p.printPiece()
+    case None => "Square : (row : " + s.row + ", column : "+ s.column +") without piece"
   }
 }

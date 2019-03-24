@@ -1,10 +1,8 @@
 package Pieces
 
-import Board.{Player, Square}
+import Board.{Chessboard, Square}
 
-class Piece (val player: Player, var square: Square, val color: String) {
-  val name = "Empty"
-  def print () = {
-    "  Piece : " + name + " - " + color
-  }
+trait Piece {
+  def printPiece() : String
+  def movement(c : Chessboard) : List[Square]
 }
