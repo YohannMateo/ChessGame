@@ -15,7 +15,7 @@ class Queen (color: Color) extends Piece {
 
     val list = s match {
       case Some(sq) =>
-        c.squares.filter(s => conditionMovement(sq,s))
+        c.squares.filter(s => (s.row,s.column) != (sq.row,sq.column) && conditionMovement(sq,s))
       case None => List[Square]()
     }
 
