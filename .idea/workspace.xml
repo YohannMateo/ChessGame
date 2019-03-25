@@ -23,7 +23,12 @@
       <change beforePath="$PROJECT_DIR$/project/target/streams/runtime/exportedProducts/$global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/runtime/exportedProducts/$global/streams/export" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/target/streams/runtime/fullClasspath/$global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/runtime/fullClasspath/$global/streams/export" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/target/streams/runtime/internalDependencyClasspath/$global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/runtime/internalDependencyClasspath/$global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/Board/Chessboard.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Board/Chessboard.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/Pieces/Bishop.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Pieces/Bishop.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/Pieces/King.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Pieces/King.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/Pieces/Knight.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Pieces/Knight.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/Pieces/Pawn.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Pieces/Pawn.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/Pieces/Piece.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Pieces/Piece.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/Pieces/Queen.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Pieces/Queen.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/Pieces/Rook.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Pieces/Rook.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/.history" beforeDir="false" afterPath="$PROJECT_DIR$/target/.history" afterDir="false" />
@@ -80,11 +85,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/Board/Chessboard.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+            <state relative-caret-position="136">
+              <caret line="8" column="139" selection-start-line="8" selection-start-column="139" selection-end-line="8" selection-end-column="139" />
             </state>
           </provider>
         </entry>
@@ -92,11 +97,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/Pieces/King.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="6" />
-              <folding>
-                <element signature="e#16#40#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="680">
+              <caret line="40" column="176" selection-start-line="40" selection-start-column="176" selection-end-line="40" selection-end-column="176" />
             </state>
           </provider>
         </entry>
@@ -104,11 +106,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/Pieces/Knight.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="6" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
-              <folding>
-                <element signature="e#16#40#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="442">
+              <caret line="35" column="9" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -116,11 +115,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/Pieces/Rook.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="68" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="68" />
-              <folding>
-                <element signature="e#16#40#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="466">
+              <caret line="100" column="3" selection-start-line="100" selection-start-column="3" selection-end-line="100" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -137,8 +133,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/Pieces/Piece.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
+            <state relative-caret-position="153">
+              <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+              <folding>
+                <element signature="e#16#40#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -146,10 +145,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/Pieces/Queen.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="30" lean-forward="true" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="72" />
+            <state relative-caret-position="454">
+              <caret line="108" column="3" lean-forward="true" selection-start-line="37" selection-start-column="93" selection-end-line="108" selection-end-column="3" />
               <folding>
-                <element signature="e#16#40#0" expanded="true" />
+                <element signature="e#1291#3907#0" />
+                <element signature="e#3915#6855#0" />
               </folding>
             </state>
           </provider>
@@ -164,13 +164,13 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/Pieces/Bishop.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="71" selection-start-line="17" selection-start-column="71" selection-end-line="17" selection-end-column="71" />
+            <state relative-caret-position="466">
+              <caret line="103" column="3" selection-start-line="32" selection-start-column="2" selection-end-line="103" selection-end-column="3" />
               <folding>
-                <element signature="e#16#34#0" expanded="true" />
+                <element signature="e#986#3608#0" />
               </folding>
             </state>
           </provider>
@@ -179,8 +179,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/Pieces/Pawn.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="31" column="33" lean-forward="true" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="33" />
+            <state relative-caret-position="333">
+              <caret line="35" column="29" selection-start-line="35" selection-start-column="29" selection-end-line="35" selection-end-column="29" />
               <folding>
                 <element signature="e#16#40#0" expanded="true" />
               </folding>
@@ -220,18 +220,18 @@
         <option value="$PROJECT_DIR$/src/main/scala/index-dev.html" />
         <option value="$PROJECT_DIR$/src/main/scala/Board/package.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/Board/Square.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/Pieces/Piece.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/Board/Color.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/Board/Player.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/Pieces/King.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/Pieces/Knight.scala" />
         <option value="$PROJECT_DIR$/build.sbt" />
         <option value="$PROJECT_DIR$/src/main/scala/Party.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/Pieces/Piece.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/Pieces/Pawn.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/Board/Chessboard.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/Pieces/Rook.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/Pieces/Queen.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/Pieces/King.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/Pieces/Knight.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/Pieces/Bishop.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/Pieces/Queen.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/Pieces/Rook.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/Board/Chessboard.scala" />
       </list>
     </option>
   </component>
@@ -300,7 +300,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553504908293" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553533262689" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Scala/formation_scala/formation-scala-correction/streaming" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -390,7 +390,14 @@
       <option name="project" value="LOCAL" />
       <updated>1553504139393</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Reprise des mouvements pour la reine, tour et fou pour enlever la case initial">
+      <created>1553505310294</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1553505310294</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TodoView">
@@ -404,6 +411,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1928" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1641791" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -441,7 +449,8 @@
     <MESSAGE value="Reprise en fonctionnel + Début des mouvements des pieces" />
     <MESSAGE value="Implementation des mouvements sur toutes les pieces et elles sont en test" />
     <MESSAGE value="Rajout de la ligne 3 du plateau" />
-    <option name="LAST_COMMIT_MESSAGE" value="Rajout de la ligne 3 du plateau" />
+    <MESSAGE value="Reprise des mouvements pour la reine, tour et fou pour enlever la case initial" />
+    <option name="LAST_COMMIT_MESSAGE" value="Reprise des mouvements pour la reine, tour et fou pour enlever la case initial" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/index-dev.html">
@@ -496,23 +505,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/Pieces/Piece.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/Pieces/Pawn.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" column="33" lean-forward="true" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="33" />
-          <folding>
-            <element signature="e#16#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/Party.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -520,17 +512,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/Board/Chessboard.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/Pieces/Piece.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        <state relative-caret-position="153">
+          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+          <folding>
+            <element signature="e#16#40#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/Pieces/King.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/Pieces/Pawn.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="6" />
+        <state relative-caret-position="333">
+          <caret line="35" column="29" selection-start-line="35" selection-start-column="29" selection-end-line="35" selection-end-column="29" />
           <folding>
             <element signature="e#16#40#0" expanded="true" />
           </folding>
@@ -539,41 +534,50 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/Pieces/Knight.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="6" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
+        <state relative-caret-position="442">
+          <caret line="35" column="9" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/Pieces/King.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="40" column="176" selection-start-line="40" selection-start-column="176" selection-end-line="40" selection-end-column="176" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/Pieces/Bishop.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="466">
+          <caret line="103" column="3" selection-start-line="32" selection-start-column="2" selection-end-line="103" selection-end-column="3" />
           <folding>
-            <element signature="e#16#40#0" expanded="true" />
+            <element signature="e#986#3608#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/Pieces/Rook.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="68" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="68" />
-          <folding>
-            <element signature="e#16#40#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="466">
+          <caret line="100" column="3" selection-start-line="100" selection-start-column="3" selection-end-line="100" selection-end-column="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/Pieces/Queen.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="30" lean-forward="true" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="72" />
+        <state relative-caret-position="454">
+          <caret line="108" column="3" lean-forward="true" selection-start-line="37" selection-start-column="93" selection-end-line="108" selection-end-column="3" />
           <folding>
-            <element signature="e#16#40#0" expanded="true" />
+            <element signature="e#1291#3907#0" />
+            <element signature="e#3915#6855#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/Pieces/Bishop.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/Board/Chessboard.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="71" selection-start-line="17" selection-start-column="71" selection-end-line="17" selection-end-column="71" />
-          <folding>
-            <element signature="e#16#34#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="136">
+          <caret line="8" column="139" selection-start-line="8" selection-start-column="139" selection-end-line="8" selection-end-column="139" />
         </state>
       </provider>
     </entry>

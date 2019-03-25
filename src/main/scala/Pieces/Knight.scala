@@ -1,9 +1,8 @@
 package Pieces
 
-import Board.Color.Color
-import Board.{Chessboard, Square}
+import Board.{Chessboard, Color, Square}
 
-class Knight (color: Color) extends Piece {
+class Knight (override val color: _root_.Board.Color.Color) extends Piece {
   val name = "Knight"
   override def printPiece(): String = name + " " + color
 
@@ -15,7 +14,7 @@ class Knight (color: Color) extends Piece {
 
     val list = s match {
       case Some(sq) =>
-        c.squares.filter(s => conditionMovement(sq,s))
+        c.squares.filter(s => conditionMovement(sq,s,color))
       case None => List[Square]()
     }
 
@@ -24,10 +23,23 @@ class Knight (color: Color) extends Piece {
     list
   }
 
-  private def conditionMovement(squareInit:Square,square:Square):Boolean = {
-    (square.row == squareInit.row+1 && square.column == squareInit.column-2) || (square.row == squareInit.row+1 && square.column == squareInit.column+2) || // case diag mid high droite/gauche
-      (square.row == squareInit.row+2 && square.column == squareInit.column+1) || (square.row == squareInit.row+2 && square.column == squareInit.column-1) || // case diag high droite/gauche
-      (square.row == squareInit.row-1 && square.column == squareInit.column-2) || (square.row == squareInit.row-1 && square.column == squareInit.column+2) || // case diag mid down droite/gauche
-      (square.row == squareInit.row-2 && square.column == squareInit.column+1) || (square.row == squareInit.row-2 && square.column == squareInit.column-1)  // case diag down droite/gauche
+  private def conditionMovement(squareInit:Square,square:Square,color:Color.Color):Boolean = {
+    square.piece match {
+      case Some(p) =>
+        if(color!=p.color) {
+          (square.row == squareInit.row+1 && square.column == squareInit.column-2) || (square.row == squareInit.row+1 && square.column == squareInit.column+2) || // case diag mid high droite/gauche
+            (square.row == squareInit.row+2 && square.column == squareInit.column+1) || (square.row == squareInit.row+2 && square.column == squareInit.column-1) || // case diag high droite/gauche
+            (square.row == squareInit.row-1 && square.column == squareInit.column-2) || (square.row == squareInit.row-1 && square.column == squareInit.column+2) || // case diag mid down droite/gauche
+            (square.row == squareInit.row-2 && square.column == squareInit.column+1) || (square.row == squareInit.row-2 && square.column == squareInit.column-1)  // case diag down droite/gauche
+        } else {
+          false
+        }
+      case None =>
+        (square.row == squareInit.row+1 && square.column == squareInit.column-2) || (square.row == squareInit.row+1 && square.column == squareInit.column+2) || // case diag mid high droite/gauche
+          (square.row == squareInit.row+2 && square.column == squareInit.column+1) || (square.row == squareInit.row+2 && square.column == squareInit.column-1) || // case diag high droite/gauche
+          (square.row == squareInit.row-1 && square.column == squareInit.column-2) || (square.row == squareInit.row-1 && square.column == squareInit.column+2) || // case diag mid down droite/gauche
+          (square.row == squareInit.row-2 && square.column == squareInit.column+1) || (square.row == squareInit.row-2 && square.column == squareInit.column-1)  // case diag down droite/gauche
+    }
+
   }
 }

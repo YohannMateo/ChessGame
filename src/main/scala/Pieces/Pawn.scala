@@ -3,7 +3,7 @@ package Pieces
 import Board.Color.Color
 import Board.{Chessboard, Color, Square}
 
-class Pawn (color: Color) extends Piece {
+class Pawn (override val color: _root_.Board.Color.Color) extends Piece {
   val name = "Pawn"
   override def printPiece(): String = name + " " + color
 
@@ -14,27 +14,42 @@ class Pawn (color: Color) extends Piece {
     })
 
     val list = s match {
-      case Some(sq) =>
-        color match {
-          case Color.White =>
-            if (sq.row==2) {
-              c.squares.filter(s => (s.row == 3 || sq.row == 4) && s.column == sq.column)
-            } else {
-              c.squares.filter(s => s.row == sq.row+1 && s.column == sq.column)
-            }
-          case Color.Black =>
-            if (sq.row==7) {
-              c.squares.filter(s => (s.row == 6 || sq.row == 5) && s.column == sq.column)
-            } else {
-              c.squares.filter(s => s.row == sq.row-1 && s.column == sq.column)
-            }
-        }
+      case Some(sq) => c.squares.filter(s => conditionMovement(sq,s,color))
       case None => List[Square]()
     }
 
     //println("Pawn " + color)
     //list.foreach(s => println(Square.printSquare(s)))
-
+    println("Pawn : ")
+    println(list)
     list
+  }
+
+  private def conditionMovement(squareInit:Square,square:Square,color: Color):Boolean = {
+    square.piece match {
+      case Some(p) =>
+        (color,p.color) match {
+          case (Color.White,Color.Black) =>
+            square.row == squareInit.row+1 && (square.column == squareInit.column+1 || square.column == squareInit.column-1)
+          case (Color.Black,Color.White) =>
+            square.row == squareInit.row-1 && (square.column == squareInit.column+1 || square.column == squareInit.column-1)
+          case (_,_) => false
+        }
+      case None =>
+        color match {
+          case Color.White =>
+            if (squareInit.row == 2) {
+              (square.row == squareInit.row+1 || square.row==squareInit.row+2) && square.column == squareInit.column
+            } else {
+              square.row == squareInit.row+1 && square.column == squareInit.column
+            }
+          case Color.Black =>
+            if (squareInit.row == 7) {
+              (square.row == squareInit.row-1 || square.row==squareInit.row-2) && square.column == squareInit.column
+            } else {
+              square.row == squareInit.row-1 && square.column == squareInit.column
+            }
+        }
+    }
   }
 }
