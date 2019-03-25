@@ -12,7 +12,7 @@ object Chessboard {
     val listBishop = List(Square(1,3,Option(new Bishop(Color.White))), Square(1,6,Option(new Bishop(Color.White))),Square(8,3,Option(new Bishop(Color.Black))), Square(8,6,Option(new Bishop(Color.Black))))
     val listQueen = List(Square(1,4,Option(new Queen(Color.White))), Square(8,4,Option(new Queen(Color.Black))))
     val listKing = List(Square(1,5,Option(new King(Color.White))), Square(8,4,Option(new King(Color.Black))))
-    val listEmpty = List.range(1,9).flatMap(i => List(Square(6,i,None), Square(5,i,None), Square(4,i,None)))
+    val listEmpty = List.range(1,9).flatMap(i => List(Square(6,i,None), Square(5,i,None), Square(4,i,None), Square(3,i,None)))
 
     val listPieces = List.concat(listPawn,listBishop,listEmpty,listKing,listKnight,listQueen,listRook).sortBy(s=>(s.row,s.column))
     Chessboard(listPieces)
