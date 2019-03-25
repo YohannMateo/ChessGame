@@ -19,6 +19,8 @@ class King (color: Color) extends Piece {
       case None => List[Square]()
     }
 
+    //println("King " + color)
+    //list.foreach(s => println(Square.printSquare(s)))
     list
   }
 

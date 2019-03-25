@@ -18,5 +18,11 @@ object Chessboard {
     Chessboard(listPieces)
   }
 
-  def printChessboard (c : Chessboard): Unit = c.squares.foreach(s => println(Square.printSquare(s)))
+  def printChessboard (c : Chessboard) = c.squares.foreach(s => {
+    println(Square.printSquare(s))
+    s.piece match {
+      case Some(p) => println(p.movement(c))
+      case None => println("Pas de piece")
+    }
+  })
 }

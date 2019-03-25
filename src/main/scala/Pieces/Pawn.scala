@@ -32,7 +32,9 @@ class Pawn (color: Color) extends Piece {
       case None => List[Square]()
     }
 
-    list
+    //println("Pawn " + color)
+    //list.foreach(s => println(Square.printSquare(s)))
 
+    list
   }
 }
