@@ -1,9 +1,9 @@
 package Pieces
 
-import Board.Color.Color
-import Board.{Chessboard, Color, Square}
+import Board.Color.{Black, ColorVal, White}
+import Board.{Chessboard, Square}
 
-class Pawn (override val color: _root_.Board.Color.Color) extends Piece {
+class Pawn (override val color: ColorVal) extends Piece {
   val name = "Pawn"
   override def printPiece(): String = name + " " + color
 
@@ -25,25 +25,25 @@ class Pawn (override val color: _root_.Board.Color.Color) extends Piece {
     list
   }
 
-  private def conditionMovement(squareInit:Square,square:Square,color: Color):Boolean = {
+  private def conditionMovement(squareInit:Square,square:Square,color: ColorVal):Boolean = {
     square.piece match {
       case Some(p) =>
         (color,p.color) match {
-          case (Color.White,Color.Black) =>
+          case (White,Black) =>
             square.row == squareInit.row+1 && (square.column == squareInit.column+1 || square.column == squareInit.column-1)
-          case (Color.Black,Color.White) =>
+          case (Black,White) =>
             square.row == squareInit.row-1 && (square.column == squareInit.column+1 || square.column == squareInit.column-1)
           case (_,_) => false
         }
       case None =>
         color match {
-          case Color.White =>
+          case White =>
             if (squareInit.row == 2) {
               (square.row == squareInit.row+1 || square.row==squareInit.row+2) && square.column == squareInit.column
             } else {
               square.row == squareInit.row+1 && square.column == squareInit.column
             }
-          case Color.Black =>
+          case Black =>
             if (squareInit.row == 7) {
               (square.row == squareInit.row-1 || square.row==squareInit.row-2) && square.column == squareInit.column
             } else {

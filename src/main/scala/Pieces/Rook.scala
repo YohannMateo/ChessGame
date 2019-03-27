@@ -1,8 +1,9 @@
 package Pieces
 
+import Board.Color.ColorVal
 import Board.{Chessboard, Square}
 
-class Rook (override val color: _root_.Board.Color.Color) extends Piece {
+class Rook (override val color: ColorVal) extends Piece {
   val name = "Rook"
   override def printPiece(): String = name + " " + color
 

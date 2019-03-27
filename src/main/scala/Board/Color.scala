@@ -1,6 +1,8 @@
 package Board
 
-object Color extends Enumeration {
-  type Color = Value
-  val White, Black = Value
+object Color {
+  sealed trait ColorVal
+  case object Black extends ColorVal
+  case object White extends ColorVal
+  val Color = Seq(Black,White)
 }

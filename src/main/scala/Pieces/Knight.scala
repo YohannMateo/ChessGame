@@ -1,8 +1,9 @@
 package Pieces
 
-import Board.{Chessboard, Color, Square}
+import Board.Color.ColorVal
+import Board.{Chessboard, Square}
 
-class Knight (override val color: _root_.Board.Color.Color) extends Piece {
+class Knight (override val color: ColorVal) extends Piece {
   val name = "Knight"
   override def printPiece(): String = name + " " + color
 
@@ -23,7 +24,7 @@ class Knight (override val color: _root_.Board.Color.Color) extends Piece {
     list
   }
 
-  private def conditionMovement(squareInit:Square,square:Square,color:Color.Color):Boolean = {
+  private def conditionMovement(squareInit:Square,square:Square,color:ColorVal):Boolean = {
     square.piece match {
       case Some(p) =>
         if(color!=p.color) {

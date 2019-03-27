@@ -1,8 +1,8 @@
 package Board
 
-import Board.Color.Color
+import Board.Color.ColorVal
 
-case class Player (color: Color)
+case class Player (color: ColorVal)
 
 object Player {
   def printPlayer(p : Player) {

@@ -1,10 +1,10 @@
 package Pieces
 
-import Board.Color.Color
+import Board.Color.ColorVal
 import Board.{Chessboard, Square}
 
 trait Piece {
-  val color:Color
+  val color:ColorVal
   def printPiece() : String
   def movement(c : Chessboard) : List[Square]
 }
