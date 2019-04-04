@@ -3,19 +3,20 @@ package Pieces
 import Board.Color.ColorVal
 import Board.{Chessboard, Square}
 
-class King (override val color: ColorVal) extends Piece {
-  val name = "King"
-  override def printPiece(): String = name + " " + color
+case class King (override val color: ColorVal, override val name: String = "King") extends Piece
 
-  override def movement(c: Chessboard):List[Square] = {
+object King {
+  def printPiece(p : King): String = p.name + " " + p.color
+
+  def movement(k : King, c: Chessboard):List[Square] = {
     val s = c.squares.find(s => s.piece match {
-      case Some(p) => p==this
+      case Some(p) => p==k
       case None => false
     })
 
     val list = s match {
       case Some(sq) =>
-        c.squares.filter(s => conditionMovement(sq,s,color))
+        c.squares.filter(s => conditionMovement(sq,s))
       case None => List[Square]()
     }
 
@@ -24,7 +25,11 @@ class King (override val color: ColorVal) extends Piece {
     list
   }
 
-  private def conditionMovement(squareInit:Square,square:Square,color:ColorVal):Boolean = {
+  private def conditionMovement(squareInit:Square,square:Square):Boolean = {
+    val color = squareInit.piece match {
+      case Some(p) => p.color
+    }
+
     square.piece match {
       case Some(p) =>
         if(color!=p.color) {

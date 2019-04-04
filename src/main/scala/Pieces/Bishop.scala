@@ -3,13 +3,14 @@ package Pieces
 import Board.Color.ColorVal
 import Board.{Chessboard, Square}
 
-class Bishop (override val color: ColorVal) extends Piece {
-  val name = "Bishop"
-  override def printPiece(): String = name + " " + color
+case class Bishop (override val color: ColorVal, override val name: String = "Bishop") extends Piece
 
-  override def movement(c: Chessboard):List[Square] = {
+object Bishop {
+  def printPiece(p : Bishop): String = p.name + " " + p.color
+
+  def movement(b : Bishop, c: Chessboard):List[Square] = {
     val s = c.squares.find(s => s.piece match {
-      case Some(p) => p==this
+      case Some(p) => p==b
       case None => false
     })
 
@@ -32,6 +33,10 @@ class Bishop (override val color: ColorVal) extends Piece {
   }
 
   private def accessibleSquares(squareInit:Square, allCase:List[Square]): List[Square] = {
+    val color = squareInit.piece match {
+      case Some(p) => p.color
+    }
+
     val firstPieceHautGauche = allCase.filter(s=> (s.column < squareInit.column) && s.row > squareInit.row).sortBy(s=>s.column).reverse.find(s => s.piece match {
       case Some(_) => true
       case None => false
